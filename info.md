@@ -42,12 +42,15 @@ versión de esta fuente sino otra específica de emojis, por ello usamos uf135.
 
 En esta iteración no se ha ajustado la _width_ de la fuente a 1200.
 
-> Ojo que fontforge a veces se queda como un proceso en segundo plano al 100%,
-> luego de cerrar ejecutar por si acaso: killall -9 fontforge
-
 4. Ajustar metadata de las fuentes.
 
 Cuidado con los campos como BoldItalic, debería ser Bold Italic para KDE.
+
+El XUID debería ser único. Al menos copiando el de la versión que funcionaba se
+arregló.
+
+> Ojo que fontforge a veces se queda como un proceso en segundo plano al 100%,
+> luego de cerrar ejecutar por si acaso: killall -9 fontforge
 
 Ajustar nombres si queremos (Los nombres son relevantes. Ver parcheado manual).
 
