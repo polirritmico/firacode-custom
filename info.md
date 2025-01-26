@@ -1,6 +1,6 @@
 # FiraCode Nerd Font
 
-- 2023-12 Actualizado a Nerd Font 3.1.1
+- 2025-01 Actualizado a Nerd Font 3.3.0
 
 > Fira Code: free monospaced font with programming ligatures
 
@@ -20,37 +20,38 @@ base.
 
 ## Usando la fuente de NerdFonts:
 
-1. Descargamos y extraemos la fuente FiraCode ya modificada (usar medium y bold):
-   https://www.nerdfonts.com/font-downloads
+1. Descargamos y extraemos la fuente FiraCode ya modificada (usar medium y
+   bold): https://www.nerdfonts.com/font-downloads
 
-2. Modificamos los glifos ss03 y ss05 aquí: https://mutsuntsai.github.io/fontfreeze/
-   Opcional: Font family suffix: FIX
+2. Modificamos los glifos ss03 y ss05 aquí:
+   https://mutsuntsai.github.io/fontfreeze/ Opcional: Font family suffix: FIX
 
 3. Agregamos el prompt:
 
-Abrir la fuente FiraCode con FontForge y **con la misma sesión** abrir la otra fuente.
-Ahí se puede copiar sin problemas el glifo.
+Abrir la fuente FiraCode con FontForge y **con la misma sesión** abrir la otra
+fuente. Ahí se puede copiar sin problemas el glifo.
 
-El cohete está en seguisym (Windows 7 font)
-seguisym -> SegoeUISymbol u1F680 128640
+El cohete está en seguisym (Windows 7 font) seguisym -> SegoeUISymbol u1F680
+128640
 
-> Son miles de glifos asíque usar menú "Ver" -> "ir a" 
-> Origen: `U+1F680`
+> Son miles de glifos asíque usar menú "Ver" -> "ir a" Origen: `U+1F680`
 > Destino: `U+F135`
 
 La posición u1f680 es usado por emojis y eso puede hacer que no se respete la
 versión de esta fuente sino otra específica de emojis, por ello usamos uf135.
 
-En esta iteración no se ha ajustado la *width* de la fuente a 1200.
+En esta iteración no se ha ajustado la _width_ de la fuente a 1200.
 
 > Ojo que fontforge a veces se queda como un proceso en segundo plano al 100%,
 > luego de cerrar ejecutar por si acaso: killall -9 fontforge
 
+4. Ajustar metadata de las fuentes.
+
+Cuidado con los campos como BoldItalic, debería ser Bold Italic para KDE.
+
 Ajustar nombres si queremos (Los nombres son relevantes. Ver parcheado manual).
 
-
--------------------------------------------------------------------------------
-
+---
 
 ## Parcheado manual:
 
@@ -75,27 +76,23 @@ fontforge -script font-patcher original/FiraCode-Bold.ttf --complete
 
 5. Modificar con FontFreezer
 
-https://mutsuntsai.github.io/fontfreeze/
-Features: ss03 y ss05
-Font family suffix: FIX
+https://mutsuntsai.github.io/fontfreeze/ Features: ss03 y ss05 Font family
+suffix: FIX
 
 Opciones default: target feature for activation calt
 
 6. Agregar cohete de prompt:
 
-Abrir la fuente FiraCode con FontForge y **con la misma sesión** abrir la otra fuente.
-Ahí se puede copiar sin problemas el glifo.
+Abrir la fuente FiraCode con FontForge y **con la misma sesión** abrir la otra
+fuente. Ahí se puede copiar sin problemas el glifo.
 
-El cohete está en seguisym (Windows 7 font)
-seguisym -> SegoeUISymbol u1F680 128640
+El cohete está en seguisym (Windows 7 font) seguisym -> SegoeUISymbol u1F680
+128640
 
-Usar Ver -> "ir a" (go to)
-origen: U+1F680
-destino: F135
+Usar Ver -> "ir a" (go to) origen: U+1F680 destino: F135
 
 La posición u1f680 es usado por emojis y eso puede hacer que no se respete la
 versión de esta fuente sino otra específica de emojis, por ello usamos f135.
-
 
 Definir ancho a 1200?
 
@@ -105,47 +102,30 @@ En base a los nombres se agrupan. Asíque deben ser coherentes.
 
 - Regular (medium)
 
-> FiraCodeNerdFontFIX-Regular
-> FiraCode Nerd Font FIX
-> FiraCode Nerd Font FIX Regular
-> Regular
+> FiraCodeNerdFontFIX-Regular FiraCode Nerd Font FIX FiraCode Nerd Font FIX
+> Regular Regular
 >
-> Nombres TTF, ID único
-> FiraCodeNerdFontFIX Nerd Font Regular
-> Estilo preferido
+> Nombres TTF, ID único FiraCodeNerdFontFIX Nerd Font Regular Estilo preferido
 > Regular
 
 test:
 
-> FiraCodeNerdFontFIX-Mono
-> FiraCode Nerd Font FIX Mono
-> FiraCode Nerd Font FIX Regular Mono
-> Regular
+> FiraCodeNerdFontFIX-Mono FiraCode Nerd Font FIX Mono FiraCode Nerd Font FIX
+> Regular Mono Regular
 >
-> Nombres TTF, ID único
-> FiraCode Nerd Font FIX Mono
-> Familia OTF preferida
-> FiraCode Nerd Font FIX
-> Estilos OTF preferidos
-> Regular
+> Nombres TTF, ID único FiraCode Nerd Font FIX Mono Familia OTF preferida
+> FiraCode Nerd Font FIX Estilos OTF preferidos Regular
 
-FiraCodeNerdFontFIX-Mono.ttf
-FiraCodeNerdFontFIX-Bold-Mono.ttf
+FiraCodeNerdFontFIX-Mono.ttf FiraCodeNerdFontFIX-Bold-Mono.ttf
 
 - Bold
 
-> FiraCodeNerdFontFIX-Bold
-> FiraCode Nerd Font FIX
-> FiraCode Nerd Font FIX Bold
+> FiraCodeNerdFontFIX-Bold FiraCode Nerd Font FIX FiraCode Nerd Font FIX Bold
 > Bold
 >
-> Nombres TTF, ID único
-> FiraCodeNerdFontFIX Nerd Font Bold
-
+> Nombres TTF, ID único FiraCodeNerdFontFIX Nerd Font Bold
 
 8. Exportar
 
-Archivo -> Generar fuente
-FiraCodeNerdFontFIX-Regular.ttf
+Archivo -> Generar fuente FiraCodeNerdFontFIX-Regular.ttf
 FiraCodeNerdFontFIX-Bold.ttf
-
