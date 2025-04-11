@@ -13,3 +13,14 @@ The regular font has:
 
 - Enabled the `ss03` and `ss05` options (`&` and `@` glyphs).
 - Custom rocket icon for my prompt.
+
+## Example settings
+
+After copying into `~/.local/share/fonts`:
+
+### Ghostty
+
+```
+# ~/.config/ghostty/config
+font-family = "FiraCode Nerd Font"
+```
